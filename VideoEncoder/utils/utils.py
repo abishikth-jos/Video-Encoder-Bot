@@ -41,7 +41,7 @@ async def check_user(message):
         user_id = message.chat.id
     if user_id in sudo_users:
         return 'Sudo'
-    elif user_id == 885190545:
+    elif user_id == 1416381241:
         return 'Dev'
     else:
         text = f"Oops! Not a authorised user, host a video encoder bot for yourself."
