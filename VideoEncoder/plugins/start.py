@@ -26,7 +26,7 @@ async def start_message(app, message):
     check = await check_user(message)
     if not check:
         return
-    text = f"Hey! I'm VideoEncoder Bot I can encode telegram files in x264.\n\nPress /help for my commands :) \n\n**@Ts_Bots**"
+    text = f"Hey! I'm VideoEncoder Bot I can encode telegram files in x264.\n\nPress /help for my commands :) \n\n<b>@Ts_Bots</b>"
     await message.reply(text=text, reply_markup=start)
 
 
@@ -42,7 +42,10 @@ async def help_message(app, message):
 • /vset - View Settings.
 • /sthumb - Save Thumb
 • /dthumb - Clear Thumb.
-• /logs - check logs."""
+• /logs - check logs.
+
+<b>@Ts_Bots</b>
+"""
     await message.reply(text=text, reply_markup=output)
 
 
@@ -63,7 +66,7 @@ Doc thumb: <code>{'True' if (doc_thumb) else 'False'}</code>
 <b>Sudo Users</b>
 <code>{sudo_users}</code>
 
-**@Ts_Bots**
+<b>@Ts_Bots</b>
 '''
     await message.reply(text=text, reply_markup=start)
 
