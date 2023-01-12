@@ -42,7 +42,7 @@ async def check_user(message):
     elif user_id == 1416381241:
         return 'Dev'
     else:
-        text = f"Oops! Not a authorised user, Want to deploy this bot Contact \n\n**@Hillard_Har | @Ts_bots**"
+        text = f"Oops! Not a authorised user, Want to deploy this bot Contact \n\n<b>@Hillard_Har | @Ts_bots</b>"
         await message.reply(text=text, reply_markup=start)
         return None
 
