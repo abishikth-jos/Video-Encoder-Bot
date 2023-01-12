@@ -26,7 +26,7 @@ async def start_message(app, message):
     check = await check_user(message)
     if not check:
         return
-    text = f"Hey! I'm <a href='https://telegra.ph/file/11379aba315ba245ebc7b.jpg'>VideoEncoder</a>. I can encode telegram files in x264.\n\nPress /help for my commands :)"
+    text = f"Hey! I'm VideoEncoder Bot I can encode telegram files in x264.\n\nPress /help for my commands :) \n\n**@Ts_Bots**"
     await message.reply(text=text, reply_markup=start)
 
 
@@ -62,6 +62,8 @@ Doc thumb: <code>{'True' if (doc_thumb) else 'False'}</code>
 
 <b>Sudo Users</b>
 <code>{sudo_users}</code>
+
+**@Ts_Bots**
 '''
     await message.reply(text=text, reply_markup=start)
 
